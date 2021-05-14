@@ -1,0 +1,53 @@
+/* global styling */
+
+// variables
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// h1 {
+//   // font-size: var(--header1);
+//   // font-family: "Vibes", sans-serif;
+// }
+// li,
+// button,
+// label,
+// input,
+// a,
+// p {
+//   // font-size: var(--text);
+// }
+
+// h2 {
+//   // font-size: var(--header2);
+// }
+// h3 {
+//   // font-size: var(--header3);
+//   // font-weight: normal;
+// }
+// h4,
+// h5 {
+//   // font-size: var(--header4);
+// }
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
