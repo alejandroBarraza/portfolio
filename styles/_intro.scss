@@ -1,0 +1,28 @@
+// intro styling section
+.main-header {
+  width: 95%;
+  margin: 0 0 0 auto;
+  min-width: 10vh;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  background-color: coral;
+  padding: 1rem;
+  width: 60%;
+  flex-wrap: wrap;
+
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 20rem;
+  }
+}
+
+.logo-container {
+  flex: 1 1 20rem;
+  @include flex(flex-start, center, row);
+
+  h1 {
+    margin-left: 1rem;
+  }
+}
