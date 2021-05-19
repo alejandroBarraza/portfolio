@@ -7,7 +7,7 @@
 
 nav {
   @include flex(space-between, center, row);
-  background-color: coral;
+
   padding: 1rem;
   width: 60%;
   flex-wrap: wrap;
@@ -25,4 +25,39 @@ nav {
   h1 {
     margin-left: 1rem;
   }
+}
+.current {
+  // background-color: $gray-text;
+  // color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 0px 1.3px #38a9ce;
+  &:hover {
+    background-color: rgb(199, 199, 199);
+    color: $gray-text;
+    cursor: pointer;
+  }
+}
+
+.intro {
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+
+  .intro-text,
+  .intro-images {
+    flex: 1 1 40rem;
+  }
+}
+
+.intro-text {
+  @include flex(flex-start, center, column);
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
 }
