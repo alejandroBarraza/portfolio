@@ -18,6 +18,7 @@ $gray-text: #2c2c2c;
 
 @import "global";
 @import "intro";
+@import "projects";
 
 //media queries
 
@@ -100,5 +101,20 @@ $gray-text: #2c2c2c;
       width: 80%;
       height: 60%;
     }
+  }
+
+  // projects section
+  .travelly,
+  .elena {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+    }
+    h2 {
+      margin: 2rem;
+    }
+  }
+  .elena {
+    margin-bottom: 1rem;
   }
 }

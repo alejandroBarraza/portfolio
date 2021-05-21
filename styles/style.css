@@ -293,6 +293,41 @@ nav ul {
   }
 }
 
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: cennter;
+      -ms-flex-align: cennter;
+          align-items: cennter;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.travelly,
+.elena {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.travelly h2,
+.elena h2 {
+  margin: 5rem;
+  padding: 2rem;
+}
+
 @media screen and (max-width: 1334px) {
   html {
     font-size: 53%;
@@ -406,6 +441,23 @@ nav ul {
   .intro-images svg {
     width: 80%;
     height: 60%;
+  }
+  .travelly,
+  .elena {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50rem;
+            flex: 1 1 50rem;
+  }
+  .travelly img,
+  .elena img {
+    width: 100%;
+  }
+  .travelly h2,
+  .elena h2 {
+    margin: 2rem;
+  }
+  .elena {
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
