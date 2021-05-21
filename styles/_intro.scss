@@ -2,13 +2,13 @@
 .main-header {
   width: 95%;
   margin: 0 0 0 auto;
-  min-width: 10vh;
 }
 
 nav {
   @include flex(space-between, center, row);
-
+  min-width: 10vh;
   padding: 1rem;
+  margin-top: 1rem;
   width: 60%;
   flex-wrap: wrap;
 
@@ -24,18 +24,19 @@ nav {
 
   h1 {
     margin-left: 1rem;
+    // padding-top: 1rem;
+    // font-family: "Great Vibes", cursive;
+    // font-size: 3rem;
+    // font-weight: 300;
   }
 }
-.current {
-  // background-color: $gray-text;
-  // color: white;
+.fixed {
+  background-color: $gray-text;
+  color: white;
   padding: 1rem 3rem;
   border-radius: 2rem;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 0 0px 1.3px #38a9ce;
   &:hover {
-    background-color: rgb(199, 199, 199);
-    color: $gray-text;
     cursor: pointer;
   }
 }
@@ -43,15 +44,46 @@ nav {
 .intro {
   @include flex(space-between, center, row);
   flex-wrap: wrap;
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
 
-  .intro-text,
-  .intro-images {
-    flex: 1 1 40rem;
+  h2 {
+    background-image: $gradient;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 8rem;
+    display: inline-block;
+    padding-top: 2rem;
+  }
+
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0rem;
+  }
+  p {
+    color: $gray-text;
+    padding: 2rem 0rem;
   }
 }
 
-.intro-text {
-  @include flex(flex-start, center, column);
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
+}
+
+.intro-social {
+  margin-top: 2rem;
+
+  img {
+    max-height: 4.8rem;
+    max-width: 4.8rem;
+  }
+  a {
+    margin-right: 5rem;
+  }
 }
 
 .splash {
