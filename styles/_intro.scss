@@ -1,4 +1,3 @@
-// intro styling section
 .main-header {
   width: 95%;
   margin: 0 0 0 auto;
@@ -24,20 +23,6 @@ nav {
 
   h1 {
     margin-left: 1rem;
-    // padding-top: 1rem;
-    // font-family: "Great Vibes", cursive;
-    // font-size: 3rem;
-    // font-weight: 300;
-  }
-}
-.fixed {
-  background-color: $gray-text;
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    cursor: pointer;
   }
 }
 
@@ -92,4 +77,61 @@ nav {
   right: 0%;
   height: 100%;
   z-index: -1;
+}
+
+.fixed {
+  background-color: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#plant-left {
+  animation: leave 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  animation: leave 1.5s ease 1.5s infinite alternate;
+}
+
+#me {
+  animation: me 1.5s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+//animations leaves
+@keyframes leave {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(350deg);
+  }
 }
