@@ -18,3 +18,87 @@ $gray-text: #2c2c2c;
 
 @import "global";
 @import "intro";
+
+//media queries
+
+@media screen and (max-width: 1334px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  .intro-social {
+    a {
+      margin-right: 3rem;
+    }
+  }
+  .intro-images {
+    svg {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 50%;
+  }
+  .intro-images {
+    svg {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 778px) {
+  html {
+    font-size: 45%;
+  }
+  .main-header {
+    width: 100%;
+  }
+  .logo-container {
+    @include flex(center, center, row);
+    margin-bottom: 2rem;
+    flex: 1 1 80rem;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  ul {
+    flex: 1 1 80rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+  .intro-text {
+    @include flex(center, center, column);
+    p {
+      text-align: center;
+    }
+    h2 {
+      padding-top: 0rem;
+    }
+  }
+  .intro-social {
+    @include flex(center, center, row);
+  }
+  .intro-text,
+  .intro-images {
+    flex: 1 1 60rem;
+  }
+
+  .intro-images {
+    text-align: center;
+    svg {
+      width: 80%;
+      height: 60%;
+    }
+  }
+}
