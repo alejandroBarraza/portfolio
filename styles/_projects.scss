@@ -3,7 +3,7 @@
   margin: auto;
   min-height: 90vh;
   text-align: center;
-  @include flex(space-between, cennter, row);
+  @include flex(space-between, center, row);
   flex-wrap: wrap;
 }
 .travelly,

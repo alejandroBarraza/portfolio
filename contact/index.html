@@ -19,20 +19,26 @@
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a class="fixed" href="./index.html">Projects</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a class="fixed" href="./index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="projects">
-      <div class="travelly">
-        <h2>Travelly</h2>
-        <img src="../img/travelly.jpg" alt="Travelly project" />
-      </div>
-      <div class="elena">
-        <h2>Elena</h2>
-        <img src="../img/elena-joy.jpg" alt="Elena project" />
-      </div>
+    <section class="form-section">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="main">Mail</label>
+        <input type="mail" name="mail" id="mail" required />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button class="button-submit">Submit</button>
+      </form>
     </section>
+    <footer>
+      <ul>
+        <li>Ale Barraza &copy 2021</li>
+      </ul>
+    </footer>
   </body>
 </html>
