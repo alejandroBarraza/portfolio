@@ -5,6 +5,7 @@
   text-align: center;
   @include flex(space-between, center, row);
   flex-wrap: wrap;
+  min-height: 80vh;
 }
 .travelly,
 .elena {
@@ -14,4 +15,7 @@
     margin: 5rem;
     padding: 2rem;
   }
+}
+.elena {
+  padding-bottom: 1rem;
 }

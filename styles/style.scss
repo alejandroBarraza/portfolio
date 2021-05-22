@@ -20,6 +20,7 @@ $gray-text: #2c2c2c;
 @import "intro";
 @import "projects";
 @import "contact";
+@import "footer";
 
 //media queries
 
@@ -117,5 +118,17 @@ $gray-text: #2c2c2c;
   }
   .elena {
     margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  //footer section
+  footer {
+    ul {
+      flex: 1 1 40rem;
+      @include flex(space-between, center, row);
+    }
+    h1 {
+      flex: 1 1 40rem;
+    }
   }
 }

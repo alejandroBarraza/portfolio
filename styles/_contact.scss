@@ -1,0 +1,31 @@
+.form-section {
+  min-height: 80vh;
+  @include flex(center, center, row);
+
+  form {
+    @include flex(center, center, column);
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2);
+    padding: 3rem 10rem;
+    border-radius: 2rem;
+
+    input,
+    textarea {
+      margin: 1.5rem;
+    }
+    textarea {
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      background: $background-color;
+      color: white;
+      transition: background 0.5s ease;
+      &:hover {
+        background: rgb(33, 84, 126);
+      }
+    }
+  }
+}

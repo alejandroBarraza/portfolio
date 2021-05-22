@@ -69,9 +69,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-width: 10vh;
+  min-height: 10vh;
   padding: 1rem;
-  margin-top: 1rem;
   width: 60%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -134,7 +133,7 @@ nav ul {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 90vh;
+  min-height: 80vh;
   width: 90%;
   margin: auto;
 }
@@ -313,6 +312,7 @@ nav ul {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 80vh;
 }
 
 .travelly,
@@ -326,6 +326,10 @@ nav ul {
 .elena h2 {
   margin: 5rem;
   padding: 2rem;
+}
+
+.elena {
+  padding-bottom: 1rem;
 }
 
 .form-section {
@@ -343,6 +347,78 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 3rem 10rem;
+  border-radius: 2rem;
+}
+
+.form-section form input,
+.form-section form textarea {
+  margin: 1.5rem;
+}
+
+.form-section form textarea {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 1rem;
+  background: #154353;
+  color: white;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.form-section form button:hover {
+  background: #21547e;
+}
+
+footer {
+  background-color: #154353;
+  color: white;
+  min-height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 0rem 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer ul a {
+  margin-right: auto;
+  padding-left: 5rem;
 }
 
 @media screen and (max-width: 1334px) {
@@ -475,6 +551,30 @@ nav ul {
   }
   .elena {
     margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  footer ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer h1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
